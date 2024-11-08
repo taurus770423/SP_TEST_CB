@@ -188,7 +188,7 @@ class SpTestCbApplicationTests {
     @Test
     void test6() throws CommonException, JsonProcessingException {
         System.out.println();
-        System.out.println("### 1.測試呼叫查詢幣別對應表資料API，並顯示其內容。 ###");
+        System.out.println("### 6. 測試呼叫資料轉換的API，並顯示其內容。 ###");
 
         String url = "http://localhost:8080/coin/details";
         ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
