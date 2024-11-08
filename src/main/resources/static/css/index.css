@@ -1,0 +1,451 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
+  border-top: 1px solid #dddddd;
+}
+
+#currency_title, #coin_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #cccccc;
+  padding: 2px 16px;
+  margin-bottom: 4px;
+}
+
+#add_currency, svg[name=delete_currency] {
+  cursor: pointer;
+}
+#add_currency:hover, svg[name=delete_currency]:hover {
+  color: hsl(194, 100%, 38%);
+}
+
+#currency_list {
+  width: 800px;
+}
+
+#coin_table {
+  width: 800px;
+}
+#coin_table td {
+  text-align: center;
+}
+
+.table_field input {
+  text-align: center;
+  border: 1px solid #cccccc;
+  width: 95%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 4px;
+}
+.table_field thead {
+  border-collapse: collapse;
+}
+.table_field thead tr th {
+  padding: 2px 4px;
+  position: relative;
+}
+.table_field thead tr th:first-child {
+  border-start-start-radius: 8px;
+  border-end-start-radius: 8px;
+}
+.table_field thead tr th:last-child {
+  border-start-end-radius: 8px;
+  border-end-end-radius: 8px;
+}
+.table_field thead tr .width_1 {
+  width: 1%;
+}
+.table_field thead tr .width_2 {
+  width: 2%;
+}
+.table_field thead tr .width_3 {
+  width: 3%;
+}
+.table_field thead tr .width_4 {
+  width: 4%;
+}
+.table_field thead tr .width_5 {
+  width: 5%;
+}
+.table_field thead tr .width_6 {
+  width: 6%;
+}
+.table_field thead tr .width_7 {
+  width: 7%;
+}
+.table_field thead tr .width_8 {
+  width: 8%;
+}
+.table_field thead tr .width_9 {
+  width: 9%;
+}
+.table_field thead tr .width_10 {
+  width: 10%;
+}
+.table_field thead tr .width_11 {
+  width: 11%;
+}
+.table_field thead tr .width_12 {
+  width: 12%;
+}
+.table_field thead tr .width_13 {
+  width: 13%;
+}
+.table_field thead tr .width_14 {
+  width: 14%;
+}
+.table_field thead tr .width_15 {
+  width: 15%;
+}
+.table_field thead tr .width_16 {
+  width: 16%;
+}
+.table_field thead tr .width_17 {
+  width: 17%;
+}
+.table_field thead tr .width_18 {
+  width: 18%;
+}
+.table_field thead tr .width_19 {
+  width: 19%;
+}
+.table_field thead tr .width_20 {
+  width: 20%;
+}
+.table_field thead tr .width_21 {
+  width: 21%;
+}
+.table_field thead tr .width_22 {
+  width: 22%;
+}
+.table_field thead tr .width_23 {
+  width: 23%;
+}
+.table_field thead tr .width_24 {
+  width: 24%;
+}
+.table_field thead tr .width_25 {
+  width: 25%;
+}
+.table_field thead tr .width_26 {
+  width: 26%;
+}
+.table_field thead tr .width_27 {
+  width: 27%;
+}
+.table_field thead tr .width_28 {
+  width: 28%;
+}
+.table_field thead tr .width_29 {
+  width: 29%;
+}
+.table_field thead tr .width_30 {
+  width: 30%;
+}
+.table_field thead tr .width_31 {
+  width: 31%;
+}
+.table_field thead tr .width_32 {
+  width: 32%;
+}
+.table_field thead tr .width_33 {
+  width: 33%;
+}
+.table_field thead tr .width_34 {
+  width: 34%;
+}
+.table_field thead tr .width_35 {
+  width: 35%;
+}
+.table_field thead tr .width_36 {
+  width: 36%;
+}
+.table_field thead tr .width_37 {
+  width: 37%;
+}
+.table_field thead tr .width_38 {
+  width: 38%;
+}
+.table_field thead tr .width_39 {
+  width: 39%;
+}
+.table_field thead tr .width_40 {
+  width: 40%;
+}
+.table_field thead tr .width_41 {
+  width: 41%;
+}
+.table_field thead tr .width_42 {
+  width: 42%;
+}
+.table_field thead tr .width_43 {
+  width: 43%;
+}
+.table_field thead tr .width_44 {
+  width: 44%;
+}
+.table_field thead tr .width_45 {
+  width: 45%;
+}
+.table_field thead tr .width_46 {
+  width: 46%;
+}
+.table_field thead tr .width_47 {
+  width: 47%;
+}
+.table_field thead tr .width_48 {
+  width: 48%;
+}
+.table_field thead tr .width_49 {
+  width: 49%;
+}
+.table_field thead tr .width_50 {
+  width: 50%;
+}
+.table_field thead tr .width_51 {
+  width: 51%;
+}
+.table_field thead tr .width_52 {
+  width: 52%;
+}
+.table_field thead tr .width_53 {
+  width: 53%;
+}
+.table_field thead tr .width_54 {
+  width: 54%;
+}
+.table_field thead tr .width_55 {
+  width: 55%;
+}
+.table_field thead tr .width_56 {
+  width: 56%;
+}
+.table_field thead tr .width_57 {
+  width: 57%;
+}
+.table_field thead tr .width_58 {
+  width: 58%;
+}
+.table_field thead tr .width_59 {
+  width: 59%;
+}
+.table_field thead tr .width_60 {
+  width: 60%;
+}
+.table_field thead tr .width_61 {
+  width: 61%;
+}
+.table_field thead tr .width_62 {
+  width: 62%;
+}
+.table_field thead tr .width_63 {
+  width: 63%;
+}
+.table_field thead tr .width_64 {
+  width: 64%;
+}
+.table_field thead tr .width_65 {
+  width: 65%;
+}
+.table_field thead tr .width_66 {
+  width: 66%;
+}
+.table_field thead tr .width_67 {
+  width: 67%;
+}
+.table_field thead tr .width_68 {
+  width: 68%;
+}
+.table_field thead tr .width_69 {
+  width: 69%;
+}
+.table_field thead tr .width_70 {
+  width: 70%;
+}
+.table_field thead tr .width_71 {
+  width: 71%;
+}
+.table_field thead tr .width_72 {
+  width: 72%;
+}
+.table_field thead tr .width_73 {
+  width: 73%;
+}
+.table_field thead tr .width_74 {
+  width: 74%;
+}
+.table_field thead tr .width_75 {
+  width: 75%;
+}
+.table_field thead tr .width_76 {
+  width: 76%;
+}
+.table_field thead tr .width_77 {
+  width: 77%;
+}
+.table_field thead tr .width_78 {
+  width: 78%;
+}
+.table_field thead tr .width_79 {
+  width: 79%;
+}
+.table_field thead tr .width_80 {
+  width: 80%;
+}
+.table_field thead tr .width_81 {
+  width: 81%;
+}
+.table_field thead tr .width_82 {
+  width: 82%;
+}
+.table_field thead tr .width_83 {
+  width: 83%;
+}
+.table_field thead tr .width_84 {
+  width: 84%;
+}
+.table_field thead tr .width_85 {
+  width: 85%;
+}
+.table_field thead tr .width_86 {
+  width: 86%;
+}
+.table_field thead tr .width_87 {
+  width: 87%;
+}
+.table_field thead tr .width_88 {
+  width: 88%;
+}
+.table_field thead tr .width_89 {
+  width: 89%;
+}
+.table_field thead tr .width_90 {
+  width: 90%;
+}
+.table_field thead tr .width_91 {
+  width: 91%;
+}
+.table_field thead tr .width_92 {
+  width: 92%;
+}
+.table_field thead tr .width_93 {
+  width: 93%;
+}
+.table_field thead tr .width_94 {
+  width: 94%;
+}
+.table_field thead tr .width_95 {
+  width: 95%;
+}
+.table_field thead tr .width_96 {
+  width: 96%;
+}
+.table_field thead tr .width_97 {
+  width: 97%;
+}
+.table_field thead tr .width_98 {
+  width: 98%;
+}
+.table_field thead tr .width_99 {
+  width: 99%;
+}
+.table_field thead tr .width_100 {
+  width: 100%;
+}
+.table_field thead tr:last-child th {
+  background-color: hsl(180, 6%, 94%);
+}
+.table_field tbody tr {
+  border: 1px dashed;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235/var(--tw-border-opacity));
+}
+.table_field tbody tr:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251/var(--tw-bg-opacity));
+}
+.table_field tbody tr:last-child {
+  border-bottom: 2px solid;
+}
+.table_field tbody td {
+  padding: 2px 4px;
+  position: relative;
+}
+.table_field tbody td:nth-child(n+2)::before {
+  position: absolute;
+  content: "";
+  top: 20%;
+  left: 0;
+  width: 2px;
+  height: 60%;
+  background-color: rgb(243 244 246/var(--tw-bg-opacity));
+}
+.table_field tbody .text_center {
+  text-align: center;
+}
+.table_field tbody .text_truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.table_field tfoot .pagination_row {
+  display: none;
+}
+.table_field tfoot .empty_message_row {
+  display: table-row;
+  border-bottom: 2px;
+}
+.table_field tfoot .empty_message_row td {
+  text-align: center;
+  padding: 8px 16px;
+}
+.table_field:has(.data_row) .pagination_row {
+  display: table-row;
+}
+.table_field:has(.data_row) .empty_message_row {
+  display: none;
+}
+.table_field #pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  color: hsla(234, 83%, 5%, 0.72);
+}
+.table_field #pagination #pagination_first_btn, .table_field #pagination #pagination_previous_btn, .table_field #pagination #pagination_next_btn, .table_field #pagination #pagination_last_btn {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 28px;
+}
+.table_field #pagination #pagination_first_btn.disable, .table_field #pagination #pagination_previous_btn.disable, .table_field #pagination #pagination_next_btn.disable, .table_field #pagination #pagination_last_btn.disable {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219/var(--tw-text-opacity));
+  cursor: default;
+}
+
+hr {
+  width: 800px;
+  border: 1px solid #cccccc;
+}

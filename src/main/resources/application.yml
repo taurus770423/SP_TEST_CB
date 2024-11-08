@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: SP_TEST_CB
+  profiles:
+    active: dev

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" th:href="@{/fontawesome-free-6.6.0-web/css/all.min.css}" href="../static/fontawesome-free-6.6.0-web/css/all.min.css">
+    <script th:src="@{/fontawesome-free-6.6.0-web/js/all.min.js}" src="../static/fontawesome-free-6.6.0-web/js/all.min.js"></script>
+
+    <script th:src="@{/js/DataTable.js}" src="../static/js/DataTable.js"></script>
+
+    <script th:src="@{/js/index.js}" src="../static/js/index.js"></script>
+    <link rel="stylesheet" th:href="@{/css/index.css}" href="../static/css/index.css">
+
+    <title>Title</title>
+</head>
+<body>
+    <hr>
+    <div id="currency_title">幣別維護</div>
+    <div id="currency_datatable"></div>
+    <ul>
+        <li>標題欄上的輸入框可以篩選資料</li>
+        <li>標題欄上的輸入框輸入完成後按後方加號可新增幣別</li>
+        <li>表格內的輸入框在輸入完成後立即更新資料</li>
+        <li>表格內後方的減號可刪除該筆資料</li>
+    </ul>
+    <hr>
+    <div id="coin_title"><span id="coin_chart_name"></span>&nbsp;匯率</div>
+    <div>UTC：<span id="coin_utc"></span>，TW：<span id="coin_tw"></span></div>
+    <table class="table_field" id="coin_table">
+        <thead>
+            <tr>
+                <th>幣別</th>
+                <th>中文名稱</th>
+                <th>匯率</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <ul><li>約三十秒更新一次</li></ul>
+    <hr>
+</body>
+</html>

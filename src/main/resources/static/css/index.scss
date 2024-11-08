@@ -1,0 +1,181 @@
+$page_width: 800px;
+$white: hsl(180, 6, 94);
+$blue: hsl(194, 100, 38);
+$gray: #cccccc;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+ul {
+    border-top: 1px solid #dddddd;
+}
+
+#currency_title, #coin_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid $gray;
+    padding: 2px 16px;
+    margin-bottom: 4px;
+}
+
+#add_currency, svg[name='delete_currency'] {
+    cursor: pointer;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+#currency_list {
+    width: $page_width;
+}
+
+#coin_table {
+    width: $page_width ;
+
+    td {
+        text-align: center;
+    }
+}
+
+.table_field {
+    input {
+        text-align: center;
+        border: 1px solid $gray;
+        width: 95%;
+        height: 100%;
+        border-radius: 8px;
+        padding: 4px;
+    }
+
+    thead {
+        border-collapse: collapse;
+
+        tr {
+            th {
+                padding: 2px 4px;
+                position: relative;
+
+                &:first-child {
+                    border-start-start-radius: 8px;
+                    border-end-start-radius: 8px;
+                }
+
+                &:last-child {
+                    border-start-end-radius: 8px;
+                    border-end-end-radius: 8px;
+                }
+            }
+
+            @for $width from 1 through 100 {
+                .width_#{$width} {
+                    width: #{$width + '%'};
+                }
+            }
+
+            &:last-child {
+                th {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border: 1px dashed ;
+            --tw-border-opacity: 1;
+            border-color: rgb(229 231 235 / var(--tw-border-opacity));
+
+            &:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+            }
+
+            &:last-child {
+                border-bottom: 2px solid;
+            }
+        }
+
+        td {
+            padding: 2px 4px;
+            position: relative;
+
+            &:nth-child(n + 2)::before {
+                position: absolute;
+                content: "";
+                top: 20%;
+                left: 0;
+                width: 2px;
+                height: 60%;
+                background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+            }
+        }
+
+        .text_center {
+            text-align: center;
+        }
+
+        .text_truncate {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    tfoot {
+        .pagination_row {
+            display: none;
+        }
+
+        .empty_message_row {
+            display: table-row;
+            border-bottom: 2px;
+
+            td {
+                text-align: center;
+                padding: 8px 16px;
+            }
+        }
+    }
+
+    &:has(.data_row) {
+        .pagination_row {
+            display: table-row;
+        }
+
+        .empty_message_row {
+            display: none;
+        }
+    }
+
+    #pagination {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: hsla(234, 83, 5, 0.72);
+
+        #pagination_first_btn, #pagination_previous_btn, #pagination_next_btn, #pagination_last_btn {
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 28px;
+
+            &.disable {
+                --tw-text-opacity: 1;
+                color: rgb(209 213 219 / var(--tw-text-opacity));
+                cursor: default;
+            }
+        }
+    }
+}
+
+hr {
+    width: $page_width;
+    border: 1px solid $gray;
+}
